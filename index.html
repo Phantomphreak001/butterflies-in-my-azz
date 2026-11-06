@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Butterflies in my Azz — WoW Forever Guild</title>
+  <meta name="description" content="Butterflies in my Azz — a WoW Forever guild. Raids, roster, rules, and applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-ornament" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="36" height="36">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#e8c56a"/>
+                <stop offset="100%" stop-color="#a67c2a"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#g)" d="M24 4c2 6 8 10 14 11-4 2-7 6-8 11-1-5-4-9-8-11 6-1 12-5 14-11-6 1-10 5-12 11C22 9 18 5 12 4c6 1 12 5 14 11-1-5-4-9-8-11 6-1 10-5 12-11z"/>
+            <circle cx="24" cy="28" r="3.5" fill="#e8c56a"/>
+            <path stroke="#e8c56a" stroke-width="1.5" fill="none" d="M24 32v8M20 38h8"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>Butterflies in my Azz</strong>
+          <small>WoW Forever Guild</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#home">Home</a>
+        <a href="#roster">Roster</a>
+        <a href="#raids">Raids</a>
+        <a href="#rules">Rules</a>
+        <a href="#apply" class="nav-cta">Apply</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero section">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">WoW Forever · Classic vibe</p>
+          <h1>Butterflies in my <em>Azz</em></h1>
+          <p class="tagline">We flutter in. We smash bosses. We laugh the whole way.</p>
+          <p class="lede">
+            A friendly WoW Forever guild for players who want solid raids without the toxic drama.
+            Casual vibes, serious pulls when it counts — and yes, the name is intentional.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#apply">Apply to Join</a>
+            <a class="btn ghost" href="#raids">See Progress</a>
+          </div>
+          <ul class="hero-stats" aria-label="Guild highlights">
+            <li><strong>Raid nights</strong><span>Tue / Thu · 8pm ET</span></li>
+            <li><strong>Focus</strong><span>Classic progression</span></li>
+            <li><strong>Discord</strong><span>Coming soon</span></li>
+          </ul>
+        </div>
+        <aside class="hero-card" aria-label="About the guild">
+          <div class="card-ornament top"></div>
+          <h2>About Us</h2>
+          <p>
+            <!-- EDIT ME: replace this blurb with your real guild pitch -->
+            Butterflies in my Azz started as a joke name and stuck because it fits —
+            we don't take ourselves too seriously, but we show up prepared.
+            Healers, tanks, DPS, alts, and socials welcome. New to Forever? We'll help you gear up.
+          </p>
+          <p class="muted">
+            Placeholder text — Steve can edit this anytime in <code>index.html</code>.
+          </p>
+          <div class="card-ornament bottom"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ROSTER -->
+    <section id="roster" class="section alt">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">People</p>
+          <h2>Guild Roster</h2>
+          <p>Sample officers and members — replace with your real names when ready.</p>
+        </header>
+
+        <div class="table-wrap">
+          <table class="roster-table">
+            <thead>
+              <tr>
+                <th>Character</th>
+                <th>Class</th>
+                <th>Role</th>
+                <th>Rank</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="rank-gm">
+                <td><span class="char">CerealKiller</span> <em class="ph">placeholder</em></td>
+                <td>Paladin</td>
+                <td>Tank / Heal</td>
+                <td><span class="badge gm">GM</span></td>
+                <td>Guild founder</td>
+              </tr>
+              <tr>
+                <td><span class="char">Moonflask</span> <em class="ph">placeholder</em></td>
+                <td>Priest</td>
+                <td>Heal</td>
+                <td><span class="badge officer">Officer</span></td>
+                <td>Raid lead</td>
+              </tr>
+              <tr>
+                <td><span class="char">Orehound</span> <em class="ph">placeholder</em></td>
+                <td>Warrior</td>
+                <td>Tank</td>
+                <td><span class="badge officer">Officer</span></td>
+                <td>MT / loot council</td>
+              </tr>
+              <tr>
+                <td><span class="char">Shadowbutter</span> <em class="ph">placeholder</em></td>
+                <td>Warlock</td>
+                <td>DPS</td>
+                <td><span class="badge raider">Raider</span></td>
+                <td>Core raid</td>
+              </tr>
+              <tr>
+                <td><span class="char">Leafwing</span> <em class="ph">placeholder</em></td>
+                <td>Druid</td>
+                <td>Heal / Flex</td>
+                <td><span class="badge raider">Raider</span></td>
+                <td>Core raid</td>
+              </tr>
+              <tr>
+                <td><span class="char">Quickstring</span> <em class="ph">placeholder</em></td>
+                <td>Hunter</td>
+                <td>DPS</td>
+                <td><span class="badge raider">Raider</span></td>
+                <td>Core raid</td>
+              </tr>
+              <tr>
+                <td><span class="char">ChattyMage</span> <em class="ph">placeholder</em></td>
+                <td>Mage</td>
+                <td>DPS</td>
+                <td><span class="badge social">Social</span></td>
+                <td>Events &amp; alts</td>
+              </tr>
+              <tr>
+                <td><span class="char">HerbBunny</span> <em class="ph">placeholder</em></td>
+                <td>Rogue</td>
+                <td>DPS</td>
+                <td><span class="badge social">Social</span></td>
+                <td>Weekend runs</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- RAIDS -->
+    <section id="raids" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Progression</p>
+          <h2>Raids &amp; Progress</h2>
+          <p>Classic-style raid track for WoW Forever. Bars are placeholders — update as you clear.</p>
+        </header>
+
+        <div class="raid-grid">
+          <article class="raid-card">
+            <div class="raid-top">
+              <h3>Molten Core</h3>
+              <span class="pct">10 / 10</span>
+            </div>
+            <div class="bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <span style="width:100%"></span>
+            </div>
+            <p class="raid-meta">Cleared · Farm status</p>
+          </article>
+
+          <article class="raid-card">
+            <div class="raid-top">
+              <h3>Blackwing Lair</h3>
+              <span class="pct">6 / 8</span>
+            </div>
+            <div class="bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <span style="width:75%"></span>
+            </div>
+            <p class="raid-meta">In progress · Chromaggus next</p>
+          </article>
+
+          <article class="raid-card">
+            <div class="raid-top">
+              <h3>Temple of Ahn'Qiraj</h3>
+              <span class="pct">0 / 9</span>
+            </div>
+            <div class="bar empty" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+              <span style="width:0%"></span>
+            </div>
+            <p class="raid-meta">Not started · placeholder</p>
+          </article>
+
+          <article class="raid-card">
+            <div class="raid-top">
+              <h3>Naxxramas</h3>
+              <span class="pct">0 / 15</span>
+            </div>
+            <div class="bar empty" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+              <span style="width:0%"></span>
+            </div>
+            <p class="raid-meta">Not started · placeholder</p>
+          </article>
+        </div>
+
+        <div class="schedule-box">
+          <h3>Raid Schedule</h3>
+          <ul>
+            <li><strong>Tuesday</strong> — Progression · 8:00pm – 11:00pm ET</li>
+            <li><strong>Thursday</strong> — Progression / farm · 8:00pm – 11:00pm ET</li>
+            <li><strong>Sunday</strong> — Optional alts / social (TBD)</li>
+          </ul>
+          <p class="muted">Edit times in <code>index.html</code> to match your real raid nights.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RULES -->
+    <section id="rules" class="section alt">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Expectations</p>
+          <h2>Guild Rules</h2>
+          <p>Short, respectful, and easy to follow.</p>
+        </header>
+
+        <ol class="rules-list">
+          <li>
+            <strong>Be decent.</strong>
+            No harassment, bigotry, or drama dumps in guild chat. Disagree like adults.
+          </li>
+          <li>
+            <strong>Show up ready.</strong>
+            On raid nights: consumables, repaired gear, addons set, and voice ready 10 minutes early.
+          </li>
+          <li>
+            <strong>Communicate.</strong>
+            Can't make a raid? Say so early. Life happens — ghosts don't help the pull timer.
+          </li>
+          <li>
+            <strong>Loot fairness.</strong>
+            Follow the loot rules announced for that night (MS &gt; OS, need/greed, or council). No ninja loot.
+          </li>
+          <li>
+            <strong>Help the guild.</strong>
+            Share mats tips, help alts, and keep the vibe fun. Butterflies stick together.
+          </li>
+          <li>
+            <strong>Officers decide.</strong>
+            If something's unclear, ask an officer. Their call stands until it's changed.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- APPLY -->
+    <section id="apply" class="section">
+      <div class="wrap apply-grid">
+        <header class="section-head">
+          <p class="eyebrow">Join us</p>
+          <h2>Apply to Butterflies</h2>
+          <p>
+            Fill this out, then copy the summary and send it to an officer in-game
+            (or Discord when we post the invite). No account data leaves your browser.
+          </p>
+        </header>
+
+        <form id="applyForm" class="apply-form" novalidate>
+          <div class="field">
+            <label for="charName">Character name *</label>
+            <input id="charName" name="charName" type="text" required maxlength="24" placeholder="Your main on Forever" />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="className">Class *</label>
+              <select id="className" name="className" required>
+                <option value="">Select…</option>
+                <option>Priest</option>
+                <option>Paladin</option>
+                <option>Warrior</option>
+                <option>Mage</option>
+                <option>Warlock</option>
+                <option>Rogue</option>
+                <option>Hunter</option>
+                <option>Druid</option>
+                <option>Shaman</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="spec">Main spec *</label>
+              <input id="spec" name="spec" type="text" required maxlength="40" placeholder="e.g. Holy, Ret, Shadow" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="experience">Raid / classic experience</label>
+            <textarea id="experience" name="experience" rows="3" placeholder="MC clears? First time raiding? Be honest — we train."></textarea>
+          </div>
+          <div class="field">
+            <label for="contact">Discord / contact</label>
+            <input id="contact" name="contact" type="text" maxlength="64" placeholder="name#0000 or in-game whisper name" />
+          </div>
+          <div class="field">
+            <label for="why">Why do you want to join? *</label>
+            <textarea id="why" name="why" rows="3" required placeholder="Raids, friends, the name… whatever's true."></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Generate application</button>
+            <button type="reset" class="btn ghost">Clear</button>
+          </div>
+        </form>
+
+        <div id="applyResult" class="apply-result" hidden>
+          <h3>Your application text</h3>
+          <p class="muted">Copy this and whisper / message an officer:</p>
+          <pre id="applyText"></pre>
+          <button type="button" class="btn primary" id="copyBtn">Copy to clipboard</button>
+          <p id="copyStatus" class="copy-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <aside class="discord-box">
+          <h3>Discord</h3>
+          <p>Invite link coming soon. For now, apply in-game and an officer will reach out.</p>
+          <span class="btn ghost disabled" aria-disabled="true">Discord — Coming soon</span>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p><strong>Butterflies in my Azz</strong> · WoW Forever guild site</p>
+      <p class="muted">Fan-made guild page. Not affiliated with Blizzard or any official WoW Forever operator. Original design — no official assets.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
