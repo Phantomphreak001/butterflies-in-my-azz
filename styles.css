@@ -222,6 +222,18 @@ code {
 
 .muted { color: var(--muted); }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Hero */
 .hero { padding-top: 3.5rem; }
 
@@ -365,6 +377,7 @@ code {
 /* Roster */
 .table-wrap {
   overflow-x: auto;
+  overflow-anchor: none;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: rgba(18, 12, 28, 0.75);
@@ -399,6 +412,184 @@ code {
 .rank-gm { background: rgba(232, 197, 106, 0.06); }
 
 .char { font-weight: 700; }
+
+.char-trigger {
+  display: inline-block;
+  font: inherit;
+  font-weight: 700;
+  color: var(--class-color, var(--text));
+  background: none;
+  border: 0;
+  padding: 0.15rem 0.1rem;
+  margin: -0.15rem -0.1rem;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 6px;
+  text-decoration: underline dotted;
+  text-decoration-color: color-mix(in srgb, currentColor 55%, transparent);
+  text-underline-offset: 0.18em;
+}
+
+.char-trigger:visited {
+  color: var(--class-color, var(--text));
+}
+
+.char-trigger:hover,
+.char-trigger[aria-expanded="true"] {
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+}
+
+.char-trigger:focus-visible {
+  outline: 2px solid rgba(232, 197, 106, 0.55);
+  outline-offset: 3px;
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+}
+
+.char-card {
+  position: fixed;
+  inset: auto;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  z-index: 80;
+  width: min(18.75rem, calc(100vw - 1.25rem));
+  height: auto;
+  max-height: none;
+  margin: 0;
+  padding: 0.8rem 1rem 0.85rem;
+  overflow: visible;
+  color: var(--text);
+  background: linear-gradient(160deg, var(--panel), var(--panel-2));
+  border: 1px solid rgba(232, 197, 106, 0.28);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow), inset 0 3px 0 var(--class-color, var(--gold));
+}
+
+.char-card-fallback { display: none; }
+
+.char-card-fallback.is-open { display: block; }
+
+.char-card::before,
+.char-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+.char-card::before { top: -10px; }
+.char-card::after { bottom: -10px; }
+
+.char-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.65rem;
+  margin: 0.65rem 0 0;
+}
+
+.char-card-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.12rem;
+  line-height: 1.25;
+  color: var(--class-color, var(--text));
+}
+
+.char-card-head .badge { flex: none; margin-top: 0.12rem; }
+
+.char-card-meta {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.8rem 0 0.75rem;
+}
+
+.char-card-label {
+  display: block;
+  margin-bottom: 0.08rem;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.char-card-value {
+  display: block;
+  color: #d8cce6;
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
+
+.char-card-foot {
+  padding-top: 0.55rem;
+  border-top: 1px solid rgba(58, 42, 85, 0.9);
+}
+
+.char-card-armory {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.char-card-armory:visited {
+  color: var(--gold);
+}
+
+.char-card-armory:hover,
+.char-card-armory:focus-visible {
+  color: #fff1c2;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.char-card-armory:focus-visible {
+  outline: 2px solid rgba(232, 197, 106, 0.55);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.char-card .card-ornament.top { margin-bottom: 0.15rem; }
+.char-card .card-ornament.bottom { margin-top: 0.7rem; }
+
+.roster-note {
+  margin: 0.95rem 0 0;
+  max-width: 46rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.roster-note a {
+  color: var(--gold);
+  font-weight: 700;
+  text-underline-offset: 0.15em;
+}
+
+.roster-note a:hover,
+.roster-note a:focus-visible {
+  color: #fff1c2;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .char-card.is-open {
+    animation: char-card-in 140ms ease;
+  }
+}
+
+@keyframes char-card-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
 
 .ph {
   font-style: italic;
